@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Bugs</title>
+  <link rel="stylesheet" type="text/css" href="report.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Report Bugs</h1>
+    <form action="submit_bug.php" method="post">
+      <label for="bug_title">Bug Title:</label>
+      <input type="text" id="bug_title" name="bug_title" required>
+
+      <label for="bug_description">Bug Description:</label>
+      <textarea id="bug_description" name="bug_description" required></textarea>
+
+      <label for="bug_screenshot">Screenshot (optional):</label>
+      <input type="file" id="bug_screenshot" name="bug_screenshot">
+
+      <input type="submit" value="Submit Bug">
+    </form>
+  </div>
+</body>
+</html>
